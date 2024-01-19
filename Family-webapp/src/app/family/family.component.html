@@ -1,0 +1,41 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Családtagok</h2>
+  <ng-container *ngIf="familyMembers.length > 0; else noData">
+    <div *ngFor="let familyGroup of familyMembers">
+      <h3>{{ familyGroup.title }} család</h3>
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Családtag titulusa</th>
+            <th scope="col">Név</th>
+            <th scope="col">Születési dátum</th>
+            <th scope="col">Születési hely</th>
+            <th scope="col">Anyja neve</th>
+            <th scope="col">Apja neve</th>
+            <th scope="col">Elhalálozás időpontja</th>
+            <th scope="col">Elhalálozás helye</th>
+            <th scope="col">Műveletek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let member of familyGroup.members">
+            <td>{{ member.familyTitle }}</td>
+            <td>{{ member.name }}</td>
+            <td>{{ member.birthDate | date }}</td>
+            <td>{{ member.birthPlace }}</td>
+            <td>{{ member.motherName }}</td>
+            <td>{{ member.fatherName }}</td>
+            <td>{{ member.deathDate ? (member.deathDate | date) : '-' }}</td>
+            <td>{{ member.deathPlace ? member.deathPlace : '-' }}</td>
+            <td>
+              <button class="btn btn-danger btn-sm" (click)="deleteFamilyMember(member.id)">Törlés</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </ng-container>
+  <ng-template #noData>
+    <p class="text-center">Nincsenek felvett adatok</p>
+  </ng-template>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+    <h2 class="mt-4">Új családtag hozzáadása</h2>
+    <form (ngSubmit)="addFamilyMember()" class="mt-4 rounded border p-4 col-md-6 mx-auto">
+        <div class="form-group">
+            <label for="familyTitle">Családtag titulusa:</label>
+            <select id="familyTitle" name="familyTitle" [(ngModel)]="formData.familyTitle" class="form-control"
+                required>
+                <option value="" disabled selected>Válassz titulust</option>
+                <option value="Dédszülő">Dédszülő</option>
+                <option value="Nagyszülő">Nagyszülő</option>
+                <option value="Szülő">Szülő</option>
+                <option value="Gyermek">Gyermek</option>
+            </select>
+            <label for="familyName">Család név:</label>
+            <input type="text" id="familyName" name="familyName" [(ngModel)]="formData.familyName" class="form-control"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="birthDate">Születési dátum:</label>
+            <input type="date" id="birthDate" name="birthDate" [(ngModel)]="formData.birthDate" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="birthPlace">Születési hely:</label>
+            <input type="text" id="birthPlace" name="birthPlace" [(ngModel)]="formData.birthPlace" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="motherName">Anyja neve:</label>
+            <input type="text" id="motherName" name="motherName" [(ngModel)]="formData.motherName" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="fatherName">Apja neve:</label>
+            <input type="text" id="fatherName" name="fatherName" [(ngModel)]="formData.fatherName" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="deathDate">Elhalálozás időpontja:</label>
+            <input type="date" id="deathDate" name="deathDate" [(ngModel)]="formData.deathDate" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="deathPlace">Elhalálozás helye:</label>
+            <input type="text" id="deathPlace" name="deathPlace" [(ngModel)]="formData.deathPlace" class="form-control">
+        </div>
+
+        <div class="col text-center">
+            <button type="submit" class="btn btn-success" [disabled]="!isFormValid()">Családtag felvétele</button>
+        </div>
+    </form>
+</div>

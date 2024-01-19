@@ -1,0 +1,88 @@
+{
+  "csaladtagok": [
+    {
+      "familyTitle": "Dédszülő",
+      "familyName": "Kiss",
+      "name": "Kissné Sarolta",
+      "birthDate": "1940-01-01",
+      "birthPlace": "Budapest",
+      "fatherName": "Kiss Ábel",
+      "motherName": "Kissné Ilona",
+      "deathDate": "2023-08-10",
+      "deathPlace": "Budapest",
+      "id": 2
+    },
+    {
+      "familyTitle": "Nagyszülő",
+      "familyName": "Kiss",
+      "name": "Kiss Máté",
+      "birthDate": "1962-02-13",
+      "birthPlace": "Budapest",
+      "motherName": "Kissné Sarolta",
+      "fatherName": "Kiss Zoltán",
+      "id": 3
+    },
+    {
+      "familyTitle": "Szülő",
+      "familyName": "Kiss",
+      "fatherName": "Kiss Máté",
+      "motherName": "Kissné Kata",
+      "name": "Kiss János",
+      "birthDate": "1981-11-03",
+      "birthPlace": "Budapest",
+      "id": 5
+    },
+    {
+      "familyTitle": "Gyermek",
+      "familyName": "Kiss",
+      "name": "Kiss Aladár",
+      "birthDate": "2001-04-12",
+      "birthPlace": "Budapest",
+      "fatherName": "Kiss János",
+      "motherName": "Kissné Eszter",
+      "id": 6
+    },
+    {
+      "familyTitle": "Dédszülő",
+      "familyName": "Pádár",
+      "name": "Pádár Csaba",
+      "birthDate": "1938-06-07",
+      "birthPlace": "Miskolc",
+      "fatherName": "Pádár Oszkár",
+      "motherName": "Pádárné Mária",
+      "deathDate": "2022-02-12",
+      "deathPlace": "Miskolc",
+      "id": 7
+    },
+    {
+      "familyTitle": "Nagyszülő",
+      "familyName": "Pádár",
+      "fatherName": "Pádár Csaba",
+      "motherName": "Harmat Enikő",
+      "birthPlace": "Miskolc",
+      "name": "Pádár Nóra",
+      "birthDate": "1960-09-18",
+      "id": 8
+    },
+    {
+      "familyTitle": "Szülő",
+      "familyName": "Pádár",
+      "name": "Pádár Barnabás",
+      "motherName": "Pádár Nóra",
+      "fatherName": "Pádár Lajos",
+      "birthDate": "1977-03-03",
+      "birthPlace": "Miskolc",
+      "id": 9
+    },
+    {
+      "familyTitle": "Gyermek",
+      "familyName": "Pádár",
+      "fatherName": "Pádár Barnabás",
+      "motherName": "Varga Ilona",
+      "birthPlace": "Miskolc",
+      "birthDate": "2001-04-12",
+      "name": "Pádár Alex",
+      "id": 10
+    }
+  ]
+}

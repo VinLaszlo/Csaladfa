@@ -1,0 +1,24 @@
+body {
+  background-color: #a6b9bc;
+}
+
+h1 {
+  text-decoration: underline;
+  color: red;
+}
+
+mark {
+  background-color: rgb(0, 255, 136);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #70797f;
+  border-top: 5px solid #0e1af8;
+}
+
+list-group {
+  background-color: aqua;
+}

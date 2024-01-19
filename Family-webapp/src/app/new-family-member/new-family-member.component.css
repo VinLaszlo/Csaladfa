@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background-color: rgb(63, 151, 222);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0acc34;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #989898;
+  cursor: not-allowed;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
